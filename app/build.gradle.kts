@@ -93,8 +93,6 @@ dependencies {
     implementation("androidx.navigation:navigation-compose:2.6.0")
     implementation("androidx.hilt:hilt-navigation-compose:1.0.0")
 
-//    implementation("io.coil-kt:coil-compose:2.6.0")
-
     //Compose Navigation
     implementation("androidx.navigation:navigation-compose:2.6.0")
 
@@ -131,7 +129,7 @@ dependencies {
     testImplementation("androidx.paging:paging-common:3.1.1")
     testImplementation("io.mockk:mockk:1.12.0")
     testImplementation("org.robolectric:robolectric:4.9")
-//    testImplementation("org.mockito:mockito-core:3.11.2")
-//    testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.5.2")
-//    testImplementation("app.cash.turbine:turbine:0.5.2")
+    testImplementation("org.mockito:mockito-inline:4.0.0")
+    testImplementation("androidx.lifecycle:lifecycle-livedata-ktx:2.4.0")
+    testImplementation("androidx.arch.core:core-testing:2.1.0")
 }

@@ -1,5 +1,6 @@
 package com.example.lloydsassignment.domain.repository
 
+
 import androidx.paging.Pager
 import androidx.paging.PagingConfig
 import androidx.paging.PagingData
@@ -19,3 +20,5 @@ class NewsRepositoryImpl(private val newsApi: ApiService) : NewsRepository {
         ).flow
     }
 }
+
+
