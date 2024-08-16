@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.lloydsassignment.R
+import com.example.lloydsassignment.core.toReadableDate
 import com.example.lloydsassignment.data.remote.model.NewsItems
 
 
@@ -70,7 +71,7 @@ fun NewsCard(
                 )
             Spacer(modifier = Modifier.height(5.dp))
                 Text(
-                    text = newsItems.publishedAt.toString(),
+                    text = newsItems.publishedAt?.toReadableDate().toString(),
                     style = MaterialTheme.typography.labelSmall,
                     color = colorResource(id = R.color.black),
                     fontSize = 12.sp,
