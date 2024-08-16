@@ -1,6 +1,7 @@
 package com.example.lloydsassignment.presentation.nav_graph
 
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.collectAsState
 import androidx.navigation.NavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -20,8 +21,7 @@ fun Navigation() {
         composable(route = Route.NewsList.route) {
             val newsViewModel = koinViewModel<NewsViewModel>()
             GetNewsList(
-//                newsState = newsViewModel.state.collectAsState().value,
-                newsState = newsViewModel.state.value!!,
+                newsState = newsViewModel.state.collectAsState().value,
                 navigateToDetails = {
                     navigateToDetails(navController = navController, newsItems = it)
                 }

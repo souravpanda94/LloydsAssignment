@@ -60,9 +60,6 @@ class NewsViewModelTest {
         `when`(newsUseCase(listOf("bbc-news", "abc-news", "al-jazeera-english")))
             .thenReturn(flowOf(testPagingData))
 
-        val observer = mock(Observer::class.java) as Observer<NewsState>
-        newsViewModel.state.observeForever(observer)
-
         newsViewModel.getNews()
 
         // Use TestPagingDataDiffer to collect the data
@@ -71,7 +68,7 @@ class NewsViewModelTest {
 
         val collectedItems = differ.getSnapshot().items
         assertEquals(testNewsItems, collectedItems)
-        newsViewModel.state.removeObserver(observer)
+
 
     }
     @Test
@@ -80,9 +77,6 @@ class NewsViewModelTest {
         `when`(newsUseCase(listOf("bbc-news", "abc-news", "al-jazeera-english"))).thenThrow(
             exception
         )
-
-        val observer = mock(Observer::class.java) as Observer<NewsState>
-        newsViewModel.state.observeForever(observer)
 
         newsViewModel.getNews()
 
