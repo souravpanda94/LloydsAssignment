@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-31:12
-INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-31:12
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-32:12
+INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:2:1-32:12
 MERGED from [io.coil-kt:coil-compose:2.4.0] /Users/souravpanda/.gradle/caches/transforms-3/4b2f3670ecbf0d5f9009518dbc69e027/transformed/coil-compose-2.4.0/AndroidManifest.xml:2:1-7:12
 MERGED from [com.google.accompanist:accompanist-systemuicontroller:0.31.4-beta] /Users/souravpanda/.gradle/caches/transforms-3/a23c8e2b131b5c862d94fe988b0f3c87/transformed/accompanist-systemuicontroller-0.31.4-beta/AndroidManifest.xml:17:1-25:12
 MERGED from [io.coil-kt:coil-compose-base:2.4.0] /Users/souravpanda/.gradle/caches/transforms-3/f9499c0013689639fba41fd892695cbe/transformed/coil-compose-base-2.4.0/AndroidManifest.xml:2:1-7:12
@@ -109,9 +109,13 @@ uses-permission#android.permission.INTERNET
 ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:5:5-66
 	android:name
 		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:5:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:6:5-78
+	android:name
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:6:22-76
 application
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:7:5-29:19
-INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:7:5-29:19
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:8:5-30:19
+INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:8:5-30:19
 MERGED from [io.insert-koin:koin-androidx-navigation:3.5.3] /Users/souravpanda/.gradle/caches/transforms-3/d1b3da3e87f944c825346d55431ba6b2/transformed/koin-androidx-navigation-3.5.3/AndroidManifest.xml:9:5-20
 MERGED from [io.insert-koin:koin-androidx-navigation:3.5.3] /Users/souravpanda/.gradle/caches/transforms-3/d1b3da3e87f944c825346d55431ba6b2/transformed/koin-androidx-navigation-3.5.3/AndroidManifest.xml:9:5-20
 MERGED from [io.insert-koin:koin-android:3.5.3] /Users/souravpanda/.gradle/caches/transforms-3/d4c08eb27b4ef2a5eea7bb16c3d6f3b7/transformed/koin-android-3.5.3/AndroidManifest.xml:9:5-20
@@ -141,45 +145,45 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/souravpanda/.gradle/
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.13.1] /Users/souravpanda/.gradle/caches/transforms-3/30ff78bacc73cd4335d8f6fbe0239771/transformed/core-1.13.1/AndroidManifest.xml:28:18-86
 	android:supportsRtl
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:15:9-35
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:16:9-35
 	android:label
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:13:9-41
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:14:9-41
 	android:fullBackupContent
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:11:9-54
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:12:9-54
 	android:roundIcon
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:14:9-54
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:15:9-54
 	tools:targetApi
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:17:9-29
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:18:9-29
 	android:icon
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:12:9-43
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:13:9-43
 	android:allowBackup
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:9:9-35
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:10:9-35
 	android:theme
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:16:9-54
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:17:9-54
 	android:dataExtractionRules
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:10:9-65
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:11:9-65
 	android:name
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:8:9-41
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:9:9-41
 activity#com.example.lloydsassignment.MainActivity
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:18:9-28:20
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:19:9-29:20
 	android:label
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:21:13-45
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:22:13-45
 	android:exported
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:20:13-36
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:21:13-36
 	android:theme
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:22:13-58
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:23:13-51
 	android:name
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:19:13-41
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:20:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:23:13-27:29
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:24:13-28:29
 action#android.intent.action.MAIN
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:24:17-69
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:25:17-69
 	android:name
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:24:25-66
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:25:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:26:17-77
+ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:27:17-77
 	android:name
-		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:26:27-74
+		ADDED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml:27:27-74
 uses-sdk
 INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/src/main/AndroidManifest.xml

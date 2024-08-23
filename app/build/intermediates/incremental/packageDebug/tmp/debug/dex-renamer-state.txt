@@ -1,4 +1,4 @@
-#Fri Aug 16 12:12:55 IST 2024
+#Fri Aug 23 11:00:35 IST 2024
 base.0=/Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.10=/Users/souravpanda/Documents/Hanriver/AndroidProjects/LloydsAssignment/app/build/intermediates/dex/debug/mergeProjectDexDebug/5/classes.dex

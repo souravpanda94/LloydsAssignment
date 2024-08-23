@@ -23,6 +23,7 @@ import androidx.compose.ui.unit.sp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.lloydsassignment.R
+import com.example.lloydsassignment.core.Dimensions
 import com.example.lloydsassignment.core.toReadableDate
 import com.example.lloydsassignment.data.remote.model.NewsItems
 
@@ -37,12 +38,12 @@ fun NewsCard(
     val context = LocalContext.current
     Row(
         modifier = modifier
-            .padding(all = 5.dp)
+            .padding(all = Dimensions.padding5)
             .clickable { onClick?.invoke(newsItems) },
         ) {
         AsyncImage(
             modifier = Modifier
-                .size(120.dp)
+                .size(Dimensions.height120)
                 .clip(MaterialTheme.shapes.medium),
             model = ImageRequest.Builder(context).data(newsItems.urlToImage).build(),
             contentDescription = null,
@@ -51,30 +52,30 @@ fun NewsCard(
         Column(
             verticalArrangement = Arrangement.SpaceAround,
             modifier = Modifier
-                .padding(top = 10.dp, start = 10.dp)
+                .padding(top = Dimensions.heightSmall, start = Dimensions.heightSmall)
         ) {
             Text(
                 text = newsItems.title.toString(),
-                fontSize = 15.sp,
+                fontSize = Dimensions.fontSize15,
                 style = MaterialTheme.typography.bodyMedium.copy(),
                 color = colorResource(id = R.color.black),
                 maxLines = 2,
                 overflow = TextOverflow.Ellipsis,
                 fontWeight = FontWeight.Bold
             )
-            Spacer(modifier = Modifier.height(5.dp))
+            Spacer(modifier = Modifier.height(Dimensions.padding5))
                 Text(
                     text = newsItems.source?.name.toString(),
                     style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
                     color = colorResource(id = R.color.teal_200),
-                    fontSize = 13.sp,
+                    fontSize = Dimensions.fontSize13,
                 )
-            Spacer(modifier = Modifier.height(5.dp))
+            Spacer(modifier = Modifier.height(Dimensions.padding5))
                 Text(
                     text = newsItems.publishedAt?.toReadableDate().toString(),
                     style = MaterialTheme.typography.labelSmall,
                     color = colorResource(id = R.color.black),
-                    fontSize = 12.sp,
+                    fontSize = Dimensions.fontSize12,
                 )
 
         }

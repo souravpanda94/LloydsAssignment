@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Original Theme -->
+<!--<resources xmlns:tools="http://schemas.android.com/tools">
+    &lt;!&ndash; Original Theme &ndash;&gt;
     <style name="Theme.LloydsAssignment" parent="android:Theme.Material.Light.NoActionBar" />
+</resources>-->
+
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.LloydsAssignment" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
 </resources>

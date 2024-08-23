@@ -10,6 +10,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import androidx.paging.compose.collectAsLazyPagingItems
+import com.example.lloydsassignment.core.Dimensions
 import com.example.lloydsassignment.presentation.common_module.ArticleCardShimmerEffect
 import com.example.lloydsassignment.data.remote.model.NewsItems
 import com.example.lloydsassignment.presentation.common_module.NewsCard
@@ -23,8 +24,8 @@ fun GetNewsList(
     if (articleItems?.itemCount != 0) {
         LazyColumn(
             modifier = Modifier.fillMaxSize(),
-            verticalArrangement = Arrangement.spacedBy(10.dp),
-            contentPadding = PaddingValues(all = 8.dp)
+            verticalArrangement = Arrangement.spacedBy(Dimensions.heightSmall),
+            contentPadding = PaddingValues(all = Dimensions.spacerHeightSmall)
         ) {
             items(
                 count = articleItems!!.itemCount,
@@ -37,10 +38,10 @@ fun GetNewsList(
             }
         }
     } else {
-        Column(verticalArrangement = Arrangement.spacedBy(15.dp)) {
+        Column(verticalArrangement = Arrangement.spacedBy(Dimensions.height15)) {
             repeat(10) {
                 ArticleCardShimmerEffect(
-                    modifier = Modifier.padding(all = 5.dp)
+                    modifier = Modifier.padding(all = Dimensions.padding5)
                 )
             }
         }

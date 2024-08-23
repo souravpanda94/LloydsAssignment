@@ -25,6 +25,7 @@ import androidx.compose.ui.unit.dp
 import coil.compose.AsyncImage
 import coil.request.ImageRequest
 import com.example.lloydsassignment.R
+import com.example.lloydsassignment.core.Dimensions
 import com.example.lloydsassignment.data.remote.model.NewsItems
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -60,7 +61,7 @@ fun DetailScreen(
         Column(
             modifier = Modifier
                 .padding(innerPadding)
-                .padding(16.dp) // Adding some padding around the content
+                .padding(Dimensions.contentPadding) // Adding some padding around the content
         ) {
             AsyncImage(
                 model = ImageRequest.Builder(context = context)
@@ -69,17 +70,17 @@ fun DetailScreen(
                 contentDescription = null,
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(240.dp)
+                    .height(Dimensions.imageHeight)
                     .clip(MaterialTheme.shapes.medium),
                 contentScale = ContentScale.Crop
             )
-            Spacer(modifier = Modifier.height(20.dp))
+            Spacer(modifier = Modifier.height(Dimensions.spacerHeightLarge))
             Text(
                 text = newsItem.title ?: "",
                 style = MaterialTheme.typography.headlineLarge,
                 color = colorResource(id = R.color.black),
             )
-            Spacer(modifier = Modifier.height(8.dp))
+            Spacer(modifier = Modifier.height(Dimensions.spacerHeightSmall))
             Text(
                 text = newsItem.content ?: "",
                 style = MaterialTheme.typography.bodyMedium,

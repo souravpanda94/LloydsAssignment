@@ -9,5 +9,10 @@
     <color name="teal_700">#FF018786</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">LloydsAssignment</string>
-    <style name="Theme.LloydsAssignment" parent="android:Theme.Material.Light.NoActionBar"/>
+    <style name="Theme.LloydsAssignment" parent="Theme.AppCompat.Light.DarkActionBar">
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
 </resources>

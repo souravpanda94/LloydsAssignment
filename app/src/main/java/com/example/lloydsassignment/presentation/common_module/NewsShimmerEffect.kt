@@ -24,7 +24,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.unit.dp
 import com.example.lloydsassignment.R
-
+import com.example.lloydsassignment.core.Dimensions
 
 @SuppressLint("ModifierFactoryUnreferencedReceiver")
 fun Modifier.shimmerEffect() = composed {
@@ -45,21 +45,21 @@ fun ArticleCardShimmerEffect(modifier: Modifier = Modifier) {
     ) {
         Box(
             modifier = Modifier
-                .size(96.dp)
+                .size(Dimensions.size96)
                 .clip(MaterialTheme.shapes.medium)
                 .shimmerEffect()
         )
         Column(
             verticalArrangement = Arrangement.SpaceAround,
             modifier = Modifier
-                .padding(horizontal = 6.dp)
-                .height(100.dp)
+                .padding(horizontal = Dimensions.height6)
+                .height(Dimensions.height100)
         ) {
             Box(
                 modifier = Modifier
                     .fillMaxWidth()
-                    .height(30.dp)
-                    .padding(horizontal = 20.dp)
+                    .height(Dimensions.height30)
+                    .padding(horizontal = Dimensions.spacerHeightLarge)
                     .shimmerEffect()
             )
             Row(
@@ -68,8 +68,8 @@ fun ArticleCardShimmerEffect(modifier: Modifier = Modifier) {
                 Box(
                     modifier = Modifier
                         .fillMaxWidth(0.5f)
-                        .padding(horizontal = 20.dp)
-                        .height(15.dp)
+                        .padding(horizontal = Dimensions.spacerHeightLarge)
+                        .height(Dimensions.height15)
                         .shimmerEffect()
                 )
 
