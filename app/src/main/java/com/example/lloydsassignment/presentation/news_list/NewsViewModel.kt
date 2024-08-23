@@ -5,14 +5,18 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.cachedIn
 import com.example.lloydsassignment.domain.usecases.NewsUseCase
+import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class NewsViewModel(private val newsUseCase: NewsUseCase) : ViewModel() {
+@HiltViewModel
+class NewsViewModel @Inject constructor(private val newsUseCase: NewsUseCase) : ViewModel() {
 
     private val _state = MutableStateFlow(NewsState())
     val state: StateFlow<NewsState> = _state
+
     init {
         getNews()
     }

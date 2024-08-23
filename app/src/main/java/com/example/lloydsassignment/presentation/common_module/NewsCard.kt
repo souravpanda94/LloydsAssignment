@@ -40,7 +40,7 @@ fun NewsCard(
         modifier = modifier
             .padding(all = Dimensions.padding5)
             .clickable { onClick?.invoke(newsItems) },
-        ) {
+    ) {
         AsyncImage(
             modifier = Modifier
                 .size(Dimensions.height120)
@@ -64,19 +64,19 @@ fun NewsCard(
                 fontWeight = FontWeight.Bold
             )
             Spacer(modifier = Modifier.height(Dimensions.padding5))
-                Text(
-                    text = newsItems.source?.name.toString(),
-                    style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
-                    color = colorResource(id = R.color.teal_200),
-                    fontSize = Dimensions.fontSize13,
-                )
+            Text(
+                text = newsItems.source?.name.toString(),
+                style = MaterialTheme.typography.labelSmall.copy(fontWeight = FontWeight.Bold),
+                color = colorResource(id = R.color.teal_200),
+                fontSize = Dimensions.fontSize13,
+            )
             Spacer(modifier = Modifier.height(Dimensions.padding5))
-                Text(
-                    text = newsItems.publishedAt?.toReadableDate().toString(),
-                    style = MaterialTheme.typography.labelSmall,
-                    color = colorResource(id = R.color.black),
-                    fontSize = Dimensions.fontSize12,
-                )
+            Text(
+                text = newsItems.publishedAt?.toReadableDate().toString(),
+                style = MaterialTheme.typography.labelSmall,
+                color = colorResource(id = R.color.black),
+                fontSize = Dimensions.fontSize12,
+            )
 
         }
     }

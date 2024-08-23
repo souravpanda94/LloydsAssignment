@@ -3,9 +3,10 @@ package com.example.lloydsassignment.data.remote
 import androidx.paging.PagingSource
 import androidx.paging.PagingState
 import com.example.lloydsassignment.data.remote.model.NewsItems
+import javax.inject.Inject
 
-class NewsPagingSource(
-    val apiService: ApiService,
+class NewsPagingSource  @Inject constructor(
+   val apiService: ApiService,
     val source : String
 ) : PagingSource<Int, NewsItems>() {
     override fun getRefreshKey(state: PagingState<Int, NewsItems>): Int? {

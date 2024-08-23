@@ -50,7 +50,7 @@ fun DetailScreen(
                         )
                     }
                 },
-                colors = TopAppBarDefaults.topAppBarColors(
+                colors = TopAppBarDefaults.smallTopAppBarColors(
                     containerColor = MaterialTheme.colorScheme.primary, // Background color
                     titleContentColor = colorResource(id = R.color.white), // Title color
                     navigationIconContentColor = colorResource(id = R.color.white) // Back icon color
@@ -84,7 +84,7 @@ fun DetailScreen(
             Text(
                 text = newsItem.content ?: "",
                 style = MaterialTheme.typography.bodyMedium,
-                color = colorResource(id = org.koin.android.R.color.material_blue_grey_800)
+                color = colorResource(id = R.color.black)
             )
         }
     }

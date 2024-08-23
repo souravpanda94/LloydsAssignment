@@ -9,13 +9,19 @@ import com.example.lloydsassignment.data.remote.repository.NewsRepository
 import com.example.lloydsassignment.data.remote.model.NewsItems
 import com.example.lloydsassignment.data.remote.NewsPagingSource
 import kotlinx.coroutines.flow.Flow
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class NewsRepositoryImpl(private val newsApi: ApiService) : NewsRepository {
+@Singleton
+class NewsRepositoryImpl @Inject constructor(private val newsApi: ApiService) : NewsRepository {
     override fun getNews(sources: List<String>): Flow<PagingData<NewsItems>> {
         return Pager(
             config = PagingConfig(pageSize = 10),
             pagingSourceFactory = {
-                NewsPagingSource( apiService = newsApi, source = sources.joinToString(separator = ","))
+                NewsPagingSource(
+                    apiService = newsApi,
+                    source = sources.joinToString(separator = ",")
+                )
             }
         ).flow
     }

@@ -4,12 +4,6 @@ import androidx.paging.PagingData
 import com.example.lloydsassignment.data.remote.model.NewsItems
 import kotlinx.coroutines.flow.Flow
 
-/*
-data class NewsState (
-    val newsItems : Flow<PagingData<NewsItems>>? = flowOf(PagingData.empty()),
-    val error : String? = null
-)*/
-
 data class NewsState(
     val newsItems: Flow<PagingData<NewsItems>>? = null,
     val error: String? = null

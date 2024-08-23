@@ -1,18 +1,8 @@
 package com.example.lloydsassignment
 
 import android.app.Application
-import com.example.lloydsassignment.di.appModule
-import org.koin.android.ext.koin.androidContext
-import org.koin.android.ext.koin.androidLogger
-import org.koin.core.context.startKoin
+import dagger.hilt.android.HiltAndroidApp
 
-class ApplicationClass : Application() {
-    override fun onCreate() {
-        super.onCreate()
-        startKoin{
-            androidLogger()
-            androidContext(this@ApplicationClass)
-            modules(appModule)
-        }
-    }
-}
+
+@HiltAndroidApp
+class MyApplication : Application()

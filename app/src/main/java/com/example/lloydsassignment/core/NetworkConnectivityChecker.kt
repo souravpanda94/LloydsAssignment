@@ -7,8 +7,11 @@ import android.net.NetworkCapabilities
 import android.net.NetworkRequest
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import javax.inject.Inject
+import javax.inject.Singleton
 
-class NetworkConnectivityChecker(context: Context) {
+@Singleton
+class NetworkConnectivityChecker @Inject constructor(context: Context) {
 
     private val connectivityManager =
         context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager
